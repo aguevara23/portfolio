@@ -6,6 +6,11 @@
   display: inline-block;
   border: 2px solid white;
   border-radius: 5px;
+  margin-top: 15px;
+
+  @mixin atMedium {
+    margin-top: 0;
+  }
 
   &--large {
     padding: 1.1rem 1.9rem;

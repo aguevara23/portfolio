@@ -24,5 +24,11 @@ class MobileMenu {
   }
 }
 
+function windowH() {
+   var wH = $(window).height();
+   $('.large-hero__image').css({"height": "100%"});
+}
+
+windowH();
 // Export allows you import this module into another js file.
 export default MobileMenu;

@@ -10705,9 +10705,13 @@ var MobileMenu = function () {
   return MobileMenu;
 }();
 
+function windowH() {
+  var wH = (0, _jquery2.default)(window).height();
+  (0, _jquery2.default)('.large-hero__image').css({ "height": "100%" });
+}
+
+windowH();
 // Export allows you import this module into another js file.
-
-
 exports.default = MobileMenu;
 
 /***/ }),

@@ -17,10 +17,11 @@
 </head>
 <body>
   <header class="site-header">
+    <div class="site-header__logo">
+      <img class="site-header__logo__graphic" src="./assets/images/logo_v2.png">
+    </div>
     <div class="wrapper">
-      <div class="site-header__logo">
-        <div class="site-header__logo__graphic">Alex Guevara</div>
-      </div>
+
 
       <div class="site-header__menu-icon">
         <div class="site-header__menu-icon__middle"></div>
@@ -29,10 +30,10 @@
       <div class="site-header__menu-content">
         <nav class="primary-nav primary-nav--pull-right">
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#" id="home-link">Home</a></li>
+            <li><a href="#" id="about-link">About</a></li>
+            <li><a href="#" id="portfolio-link">Portfolio</a></li>
+            <li><a href="#" id="contact-link">Contact</a></li>
           </ul>
         </nav>
       </div>
@@ -40,18 +41,19 @@
     </div>
   </header>
 
-  <div class="large-hero">
+  <div id="home" class="large-hero">
     <picture>
-      <source srcset="assets/images/nyc--large.jpg 1920w, assets/images/nyc--large-hi-dpi.jpg 3840w">
-      <source srcset="assets/images/nyc--medium.jpg 1380w, assets/images/nyc--medium-hi-dpi.jpg 2760w">
+      <source srcset="assets/images/nyc--large-i.jpg 1920w, assets/images/nyc--large-hi-dpi.jpg 3840w" media="(min-width: 800px)">
+      <source srcset="assets/images/nyc--medium.jpg 1380w, assets/images/nyc--medium-hi-dpi.jpg 2760w" media="(min-width: 530px)">
       <img srcset="assets/images/nyc--small.jpg 540w, assets/images/nyc--small-hi-dpi.jpg 1080w" class="large-hero__image" alt="View of NYC skyline during sunset">
     </picture>
 
     <div class="large-hero__text-content">
       <div class="wrapper">
-        <h1 class="large-hero__title">Web Developer | Photographer</h1>
-        <h2 class="large-hero__subtitle">Creating modern, responsive full stack  web applications with HTML, CSS and JavaScript.</h2>
-        <p><a href="#" class="btn btn--large">Check out my latest projects below!</a></p>
+        <h1 class="large-hero__title">Alex Guevara</h1>
+        <h2 class="large-hero__subtitle">Web Developer | Photographer</h2>
+        <p class="large-hero__description">Creating modern, responsive full stack  web applications with HTML, CSS and JavaScript.</p>
+        <p><a href="#" class="btn btn--large">View More</a></p>
       </div>
     </div>
 
@@ -62,6 +64,10 @@
       <p><span class="site-footer__text">Copyright &copy; 2017 Alex Guevara. All rights reserved. </span><a href="#" class="btn">Get in Touch</a></p>
     </div>
   </footer>
+
+  <!-- build:js assets/scripts/App.js -->
+  <script src="/temp/scripts/App.js"></script>
+  <!-- endbuild -->
 
 </body>
 </html>
