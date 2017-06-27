@@ -627,7 +627,7 @@ a {
 }
 
     .site-header--dark {
-      background-color: rgba(23, 51, 72, .85);
+      background-color: rgba(0, 0, 0, .85);
     }
   }
 
@@ -860,10 +860,59 @@ a {
       }
   }
 
-/*@import "modules/_page-section";
-@import "modules/_headline";
-@import "modules/_row";
-@import "modules/_generic-content-container";
+.row {
+
+  text-align: center;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+.row--gutters {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+.row__medium-8 {
+    text-align: left;
+  }
+
+@media (min-width: 800px) {
+
+.row {
+
+    margin-top: 30px
+}
+    .row__medium-4 {
+      float: left;
+      width: 33.33%;
+    }
+
+    .row__medium-8 {
+      float: right;
+      width: 66.66%;
+      text-align: left;
+    }
+  }
+
+.image--round {
+    border-radius: 50%;
+    width: 200px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+
+.content-container {
+  text-align: center;
+}
+
+/*@import "modules/_headline";
+
 @import "modules/_section-title";
 @import "modules/_feature-item";
 @import "modules/_testimonial";
