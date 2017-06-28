@@ -937,13 +937,35 @@ a {
     margin: 20px 20px;
   }
 
+.site-footer {
+  background-color: black;
+  color: #FFF;
+  padding: .5rem;
+  text-align: center;
+}
+
+.site-footer__text {
+    display: block;
+    margin-bottom: 1rem;
+    font-weight: 200;
+  }
+
+@media (min-width: 800px) {
+
+.site-footer__text {
+      display: inline;
+      margin-bottom: 0;
+      margin-right: 1.4rem
+  }
+  }
+
 /*@import "modules/_headline";
 
 @import "modules/_section-title";
 @import "modules/_feature-item";
 @import "modules/_testimonial";
 @import "modules/_sprite";
-@import "modules/_site-footer";
+
 
 
 @import "modules/_reveal-item";

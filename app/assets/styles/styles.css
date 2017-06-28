@@ -12,13 +12,14 @@
 @import "modules/_page-section";
 @import "modules/_content-container";
 @import "modules/_portfolio";
+@import "modules/_site-footer";
 /*@import "modules/_headline";
 
 @import "modules/_section-title";
 @import "modules/_feature-item";
 @import "modules/_testimonial";
 @import "modules/_sprite";
-@import "modules/_site-footer";
+
 
 
 @import "modules/_reveal-item";
