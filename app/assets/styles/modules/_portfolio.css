@@ -1,0 +1,11 @@
+.portfolio {
+
+  &--thumb {
+    overflow: hidden;
+    width: 250px;
+    height: 250px;
+    position: relative;
+    top: -80px;
+    margin: 20px 20px;
+  }
+}
