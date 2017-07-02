@@ -1,0 +1,7 @@
+.page-section {
+  border: 5px dotted pink;
+
+  @mixin atLarge {
+    height: 93vh;
+  }
+}

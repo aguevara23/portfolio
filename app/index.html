@@ -58,12 +58,12 @@
     </div>
   </div>
 
-  <div id="about" class="page-section" data-matching-link="#about-link">
+  <div id="about" data-matching-link="#about-link">
     <div class="wrapper">
-      <div class="row row--gutters">
+      <div class="row row--gutters--large">
         <div class="row__medium-4">
           <!-- this will be replaced with picture element -->
-          <img class="image--round" src="./assets/images/portraits/alexportrait.jpg">
+          <img class="image--round" sizes="auto" srcset="./assets/images/portraits/alexportrait1--xs.jpg 640w, ./assets/images/portraits/alexportrait1--xs-hi-dpi.jpg 1280w, ./assets/images/portraits/alexportrait1--sm-hi-dpi.jpg 990w, ./assets/images/portraits/alexportrait1--sm-hi-dpi.jpg 1980w">
           <p>Hey! My name's Alex. I'm a web developer, photographer, and dreamer.</p>
         </div>
 
@@ -71,57 +71,124 @@
           <h3>Welcome to my portfolio site!</h3>
           <p>I make responsive full-stack web apps. With a background in both STEM and the arts, I have an aptitude for creative problem solving.</p>
           <p>Here's a list of the technologies I use: HTML5, CSS3, JavaScript, jQuery, NodeJS, ExpressJS, MongoDB, MySQL, Git, Heroku, Linode, AWS.</p>
-          <p><strong><em>Check out some of my latest projects below!<em></strong></p>
         </div>
-
+      </div>
+      <div>
+        <p><strong><em>Check out some of my latest projects below!<em></strong></p>
       </div>
     </div>
   </div>
 
-  <div id="portfolio" class="row row--gutters-large">
+  <div id="web-portfolio" class="lazyload">
+    <!-- <div class="wrapper"> -->
+
+      <div class="row row--gutters">
+        <div class="row__medium-3">
+          <div class="portfolio">
+            <div class="portfolio__thumb">
+              <img class="lazyload" data-srcset="./assets/images/splatter.png">
+            </div>
+          </div>
+        </div>
+
+        <div class="row__medium-3">
+          <div class="portfolio">
+            <div class="portfolio__thumb">
+              <img class="lazyload" data-srcset="./assets/images/MilennialGoT.png">
+            </div>
+          </div>
+        </div>
+
+        <div class="row__medium-3">
+          <div class="portfolio">
+            <div class="portfolio__thumb">
+              <img class="lazyload" data-srcset="./assets/images/nim_thumb.png">
+            </div>
+          </div>
+        </div>
+
+        <div class="row__medium-3">
+          <div class="portfolio">
+            <div class="portfolio__thumb">
+              <img class="lazyload" data-srcset="./assets/images/pnv_thumb.png">
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- </div> -->
+  </div>
+
+  <div id="photo-portfolio" class="page-section lazyload">
+    <div class="row row--gutters-large">
+      <div class="row__medium-3">
+        <div class="portfolio">
+          <div class="portfolio__photo">
+            <img sizes="427px" data-srcset="./assets/images/portraits/portrait1--xs.jpg 427w, ./assets/images/portraits/portrait1--xs-hi-dpi.jpg 853w" class="lazyload" alt="Fire dancer in Boracay, Philippines" >
+          </div>
+        </div>
+      </div>
+
+      <div class="row__medium-3">
+        <div class="portfolio">
+          <div class="portfolio__photo">
+            <img class="lazyload" sizes="427px" data-srcset="./assets/images/portraits/portrait2--xs.jpg 427w, ./assets/images/portraits/portrait2--xs-hi-dpi.jpg 853w" alt="cosplayer in Toronto">
+          </div>
+        </div>
+      </div>
+
+      <div class="row__medium-3">
+        <div class="portfolio">
+          <div class="portfolio__photo">
+            <img class="lazyload" sizes="427px" data-srcset="./assets/images/portraits/portrait3--xs.jpg 427w, ./assets/images/portraits/portrait3--xs-hi-dpi.jpg 853w" alt="cosplayer in Toronto">
+          </div>
+        </div>
+      </div>
+
+      <div class="row__medium-3">
+        <div class="portfolio">
+          <div class="portfolio__photo">
+            <img class="lazyload" sizes="427px" data-srcset="./assets/images/portraits/portrait4--xs.jpg 427w, ./assets/images/portraits/portrait4--xs-hi-dpi.jpg 853w" alt="model at New York Fashion Week">
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+
+
+  </div>
+  <div id="contact">
     <div class="wrapper">
 
-    <div class="row__medium-3">
-      <div class="portfolio">
-        <div class="portfolio__thumb">
-          <img class="image--thumbnail" src="./assets/images/splatter.png">
-        </div>
-      </div>
-    </div>
 
-    <div class="row__medium-3">
-      <div class="portfolio">
-        <div class="portfolio__thumb">
-          <img src="./assets/images/splatter.png">
-        </div>
-      </div>
     </div>
-
-    <div class="row__medium-3">
-      <div class="portfolio">
-        <div class="portfolio__thumb">
-          <img src="./assets/images/splatter.png">
-        </div>
-      </div>
-    </div>
-
-    <div class="row__medium-3">
-      <div class="portfolio">
-        <div class="portfolio__thumb">
-          <img src="./assets/images/splatter.png">
-        </div>
-      </div>
-    </div>
-
 
   </div>
-  </div>
+
+
 
   <footer class="site-footer">
     <div class="wrapper">
       <p><span class="site-footer__text">Alex Guevara. Copyright &copy; 2017 | All rights reserved.</p>
     </div>
   </footer>
+
+  <div class="modal">
+    <div class="modal__inner">
+      <div class="wrapper wrapper--narrow">
+        <h2 class="section-title section-title--blue section-title--less-margin"><span class="icon icon--mail section-title__icon"></span> Get in <strong>Touch</strong></h2>
+        <p class="modal__description">I'm currently open to job offers so if you like what you see, feel free to contact me!</p>
+      </div>
+      <div class="social-icons">
+        <a href="#" class="social-icons__icon"><span class="icon icon--facebook"></span></a>
+        <a href="#" class="social-icons__icon"><span class="icon icon--twitter"></span></a>
+        <a href="#" class="social-icons__icon"><span class="icon icon--instagram"></span></a>
+        <a href="#" class="social-icons__icon"><span class="icon icon--youtube"></span></a>
+      </div>
+    </div>
+    <div class="modal__close">X</div>
+  </div>
 
   <!-- build:js assets/scripts/App.js -->
   <script src="/temp/scripts/App.js"></script>

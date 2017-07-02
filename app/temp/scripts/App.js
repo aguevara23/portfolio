@@ -10989,8 +10989,8 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var mobileMenu = new _MobileMenu2.default(); // This is the main javascript file for development. It's written in Babel and compiled with Gulp to be written with vanilla javascript. The compiled App.js file is found in /temp/scripts. Babel uses import, which functions similarly to 'require', though the syntax is much easier to read. The javascript components of the website are separated into individual modules so they are organized by specific functionality. Then they are all imported here.
 
-new _RevealOnScroll2.default((0, _jquery2.default)(".feature-item"), "85%");
-new _RevealOnScroll2.default((0, _jquery2.default)(".testimonial"), "60%");
+new _RevealOnScroll2.default((0, _jquery2.default)("#web-portfolio"), "85%");
+new _RevealOnScroll2.default((0, _jquery2.default)("#photo-portfolio"), "60%");
 var stickyHeader = new _StickyHeader2.default();
 var modal = new _Modal2.default();
 
