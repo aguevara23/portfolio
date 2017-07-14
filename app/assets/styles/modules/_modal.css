@@ -39,11 +39,11 @@
     font-size: 2rem;
     transform: scaleX(1.2);
     transform-origin: 100% 0;
-    color: $mainBlue;
+    color: blue;
     cursor: pointer;
 
     &:hover {
-      color: $mainOrange;
+      color: $mainGold;
     }
   }
 }

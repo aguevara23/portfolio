@@ -1,0 +1,96 @@
+.contact-form {
+  background-color: lightblue;
+  color: white;
+  padding-bottom: 1.5rem;
+
+  @mixin atMedium {
+    text-align: center;
+  }
+
+  &__title {
+
+  }
+
+  &__subtitle {
+
+  }
+
+  form {
+    display: block;
+    float: left;
+    text-align: center;
+    width: 100%;
+
+
+    .display-none {
+      display:none;
+    }
+
+    #submit {
+      width: 100%;
+      float: left;
+
+      input {
+        width: 85%;
+        padding: 5px 10px;
+        background-color: #FF8C77;
+        color: #FFF;
+        border: none;
+
+        @mixin atMedium {
+          width: 100px;
+          float: left;
+
+        }
+
+      }
+    }
+  }
+
+  &__info {
+
+    @mixin atMedium {
+      width: 38%;
+    	display: flex;
+    	flex-direction: column;
+    	float: left;
+    	margin-right:0;
+    }
+
+    input {
+      width: 85%;
+
+      @mixin atMedium {
+        width: 100%;
+        height: 40px;
+        margin-bottom: 10px;
+        padding-left: 5px;
+      }
+
+    }
+  }
+
+  &__message {
+
+    @mixin atMedium {
+      width: 60%;
+    	float: right;
+    	height: 140px;
+    }
+
+    textarea {
+      width: 85%;
+
+      @mixin atMedium {
+        width: 100%;
+        height: 100%;
+      }
+
+    }
+
+
+
+
+
+  }
+}

@@ -21,10 +21,16 @@
     margin-right: 30px;
   }
 
-  &--gutters-xl {
-    margin-left:70px;
-    margin-right: 70px;
+  &--padding-large {
+
+    @mixin atLarge {
+      padding-left: 50px;
+      padding-right: 50px;    
+    }
+
   }
+
+
 
   &__medium-3 {
     text-align: center;

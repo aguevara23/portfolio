@@ -73,8 +73,8 @@
           <p>Here's a list of the technologies I use: HTML5, CSS3, JavaScript, jQuery, NodeJS, ExpressJS, MongoDB, MySQL, Git, Heroku, Linode, AWS.</p>
         </div>
       </div>
-      <div>
-        <p><strong><em>Check out some of my latest projects below!<em></strong></p>
+      <div class="content-container">
+      <p><strong><em>Check out some of my latest projects below!</em></strong></p>
       </div>
     </div>
   </div>
@@ -118,7 +118,10 @@
     <!-- </div> -->
   </div>
 
-  <div id="photo-portfolio" class="page-section lazyload">
+  <div id="photo-portfolio" class="page-section  page-section--margins-large lazyload">
+    <div class="row row--gutters-large row--padding-large">
+      <h3>Aside from web development, I have a passion for photography. Take a look at some of my work here, and feel free to view more on my <a href="http://www.alexguevara.us">personal website.</a></h3>
+    </div>
     <div class="row row--gutters-large">
       <div class="row__medium-3">
         <div class="portfolio">
@@ -152,27 +155,26 @@
         </div>
       </div>
     </div>
-
-
   </div>
-  <div id="contact">
+
+  <div id="contact" class="contact-form">
     <div class="wrapper">
-      <h1>Want to connect?</h1>
-      <h3>Fill out the form below and I'll get back to you <em>ASAP!</em></h3>
-      <form>
-        <div id="contact-info">
-					<input id="inputName" type="text" placeholder="your name" name="name">
-					<input id="inputEmail" type="email" placeholder="your email address" name="_replyto">
-					<input id="inputNum" type="text" placeholder="your phone number (optional)" name="phoneno">
-				</div>
-				<div id="contact-message">
-					<textarea id="inputMessage" placeholder="your message...I love hearing feedback and ideas about collaborations!" name="message"></textarea>
-				</div>
-				<input class="display-none" type='text' name='_gotcha')>
-				<div id="submit">
-					<input type="submit" class="button_2" value="Send">
-				</div>
-      </form>
+        <h1 class="contact-form__title">Want to connect?</h1>
+        <h3 class="contact-form__subtitle">Fill out the form below and I'll get back to you <em>ASAP!</em></h3>
+        <form>
+          <div class="contact-form__info">
+  					<input id="inputName" type="text" placeholder="your name" name="name">
+  					<input id="inputEmail" type="email" placeholder="your email address" name="_replyto">
+  					<input id="inputNum" type="text" placeholder="your phone number (optional)" name="phoneno">
+  				</div>
+  				<div class="contact-form__message">
+  					<textarea id="inputMessage" placeholder="your message...I love hearing feedback and ideas about collaborations!" name="message"></textarea>
+  				</div>
+  				<input class="display-none" type='text' name='_gotcha')>
+  				<div id="submit">
+  					<input type="submit" class="button_2" value="Send">
+  				</div>
+        </form>
     </div>
   </div>
 

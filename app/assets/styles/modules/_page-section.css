@@ -1,7 +1,8 @@
 .page-section {
   border: 5px dotted pink;
 
-  @mixin atLarge {
-    height: 93vh;
+  &--margins-large {
+    margin-left: 5%;
+    margin-right: 5%;
   }
 }
