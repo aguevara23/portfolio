@@ -1,3 +1,8 @@
 .content-container {
   text-align: center;
+
+  &__header-text {
+    text-align: center;
+    width: 100%;
+  }
 }

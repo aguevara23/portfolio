@@ -53,7 +53,7 @@ class StickyHeader {
           }
 
         },
-        offset: "18%"
+        offset: "40%"
       });
 
       new Waypoint({
@@ -66,7 +66,7 @@ class StickyHeader {
           }
 
         },
-        offset: "-40%"
+        offset: "-10%"
       });
     });
 
