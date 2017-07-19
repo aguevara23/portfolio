@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 9);
+/******/ 	return __webpack_require__(__webpack_require__.s = 10);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -10657,6 +10657,25 @@ https://github.com/imakewebthings/waypoints/blob/master/licenses.txt
 "use strict";
 
 
+var _jquery = __webpack_require__(0);
+
+var _jquery2 = _interopRequireDefault(_jquery);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var ContactForm = function ContactForm() {
+  _classCallCheck(this, ContactForm);
+};
+
+/***/ }),
+/* 3 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
@@ -10715,7 +10734,7 @@ windowH();
 exports.default = MobileMenu;
 
 /***/ }),
-/* 3 */
+/* 4 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10783,7 +10802,7 @@ var Modal = function () {
 exports.default = Modal;
 
 /***/ }),
-/* 4 */
+/* 5 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10847,7 +10866,7 @@ var RevealOnScroll = function () {
 exports.default = RevealOnScroll;
 
 /***/ }),
-/* 5 */
+/* 6 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10867,7 +10886,7 @@ var _noframework = __webpack_require__(1);
 
 var _noframework2 = _interopRequireDefault(_noframework);
 
-var _jquerySmoothScroll = __webpack_require__(11);
+var _jquerySmoothScroll = __webpack_require__(12);
 
 var _jquerySmoothScroll2 = _interopRequireDefault(_jquerySmoothScroll);
 
@@ -10956,20 +10975,20 @@ var StickyHeader = function () {
 exports.default = StickyHeader;
 
 /***/ }),
-/* 6 */,
 /* 7 */,
 /* 8 */,
-/* 9 */
+/* 9 */,
+/* 10 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _MobileMenu = __webpack_require__(2);
+var _MobileMenu = __webpack_require__(3);
 
 var _MobileMenu2 = _interopRequireDefault(_MobileMenu);
 
-var _RevealOnScroll = __webpack_require__(4);
+var _RevealOnScroll = __webpack_require__(5);
 
 var _RevealOnScroll2 = _interopRequireDefault(_RevealOnScroll);
 
@@ -10977,26 +10996,55 @@ var _jquery = __webpack_require__(0);
 
 var _jquery2 = _interopRequireDefault(_jquery);
 
-var _StickyHeader = __webpack_require__(5);
+var _StickyHeader = __webpack_require__(6);
 
 var _StickyHeader2 = _interopRequireDefault(_StickyHeader);
 
-var _Modal = __webpack_require__(3);
+var _Modal = __webpack_require__(4);
 
 var _Modal2 = _interopRequireDefault(_Modal);
 
+var _ContactForm = __webpack_require__(2);
+
+var _ContactForm2 = _interopRequireDefault(_ContactForm);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var mobileMenu = new _MobileMenu2.default(); // This is the main javascript file for development. It's written in Babel and compiled with Gulp to be written with vanilla javascript. The compiled App.js file is found in /temp/scripts. Babel uses import, which functions similarly to 'require', though the syntax is much easier to read. The javascript components of the website are separated into individual modules so they are organized by specific functionality. Then they are all imported here.
+// This is the main javascript file for development. It's written in Babel and compiled with Gulp to be written with vanilla javascript. The compiled App.js file is found in /temp/scripts. Babel uses import, which functions similarly to 'require', though the syntax is much easier to read. The javascript components of the website are separated into individual modules so they are organized by specific functionality. Then they are all imported here.
 
+var mobileMenu = new _MobileMenu2.default();
 new _RevealOnScroll2.default((0, _jquery2.default)("#web-portfolio"), "85%");
 new _RevealOnScroll2.default((0, _jquery2.default)("#photo-portfolio"), "60%");
 var stickyHeader = new _StickyHeader2.default();
 var modal = new _Modal2.default();
+var contactForm = new _ContactForm2.default();
+
+(0, _jquery2.default)("#contact-form").submit(function (e) {
+  var name = document.getElementById("inputName"),
+      email = document.getElementById("inputEmail"),
+      num = document.getElementById("inputNum"),
+      message = document.getElementById("inputMessage");
+
+  if (!name.value || !email.value || !message.value) {
+    alertify.error("Please fill in the required fields");
+    return false;
+  } else {
+    _jquery2.default.ajax({
+      url: "http://formspree.io/alexguevaramedia@gmail.com",
+      method: "POST",
+      data: (0, _jquery2.default)("#contact-form").serialize(),
+      dataType: "json"
+    });
+
+    e.preventDefault();
+    (0, _jquery2.default)(this).get(0).reset();
+    alertify.success("Message Sent!");
+  }
+});
 
 /***/ }),
-/* 10 */,
-/* 11 */
+/* 11 */,
+/* 12 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
