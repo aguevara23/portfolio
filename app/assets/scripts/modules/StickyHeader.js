@@ -53,7 +53,7 @@ class StickyHeader {
           }
 
         },
-        offset: "40%"
+        offset: "50%"
       });
 
       new Waypoint({

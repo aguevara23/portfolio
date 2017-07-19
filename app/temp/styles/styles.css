@@ -980,6 +980,10 @@ a {
     padding-top: 50px;
   }
 
+.page-section--padding-bottom {
+    padding-bottom: 50px;
+  }
+
 .page-section--padding-sides {
     padding-left: 20px;
     padding-right: 20px;

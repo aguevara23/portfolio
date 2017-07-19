@@ -18,7 +18,7 @@
 <body>
   <header class="site-header">
     <div class="site-header__logo">
-      <img class="site-header__logo__graphic" src="./assets/images/logo_v2.png">
+      <a href="#home" id="home-link"><img class="site-header__logo__graphic" src="./assets/images/logo_v2.png"></a>
     </div>
     <div class="wrapper">
 
@@ -29,10 +29,12 @@
       <div class="site-header__menu-content">
         <nav class="primary-nav primary-nav--pull-right">
           <ul>
-            <li><a href="#home" id="home-link">Home</a></li>
+         <!--    <li><a href="#home" id="home-link">Home</a></li>-->
             <li><a href="#about" id="about-link">About</a></li>
             <li><a href="#web-portfolio" id="portfolio-link">Portfolio</a></li>
             <li><a href="#contact" id="contact-link">Contact</a></li>
+            <li><a href="#" class="open-modal">Resume</a></li>
+            <li><a target="_blank" href="http://alexguevara.us/category/tech/">Tech Blog</a></li>
           </ul>
         </nav>
       </div>
@@ -40,7 +42,7 @@
     </div>
   </header>
 
-  <div id="home" class="large-hero" data-matching-link="#about-link">
+  <div id="home" class="large-hero" data-matching-link="#home-link">
     <picture>
       <source srcset="assets/images/nyc--large.jpg 1920w, assets/images/nyc--large-hi-dpi.jpg 3840w" media="(min-width: 800px)">
       <source srcset="assets/images/nyc--medium.jpg 1380w, assets/images/nyc--medium-hi-dpi.jpg 2760w" media="(min-width: 530px)">
@@ -52,12 +54,12 @@
         <h1 class="large-hero__title">Alex Guevara</h1>
         <h2 class="large-hero__subtitle">Web Developer | Photographer</h2>
         <p class="large-hero__description">Creating modern, responsive full stack  web applications with HTML, CSS and JavaScript.</p>
-        <!-- <p><a href="#about" class="btn btn--large">View More</a></p> -->
+        <p><a href="#" class="btn btn--large open-modal">View Resume</a></p>
       </div>
     </div>
   </div>
 
-  <div id="about" class="page-section page-section--padding-top page-section--bg-gray" data-matching-link="#about-link">
+  <div id="about" class="page-section page-section--padding-top page-section--padding-bottom page-section--bg-gray" data-matching-link="#about-link">
     <div class="wrapper">
       <div class="row row--gutters--large">
         <div class="row__medium-4">
@@ -75,7 +77,7 @@
     </div>
   </div>
 
-  <div id="web-portfolio" class="page-section page-section--padding-top lazyload" data-matching-link="#portfolio-link">
+  <div id="web-portfolio" class="page-section page-section--padding-top page-section--padding-bottom lazyload" data-matching-link="#portfolio-link">
     <!-- <div class="wrapper"> -->
     <div class="content-container headline--margin-bottom">
     <h2><strong><em>Check out some of my latest projects below!</em></strong></h2>
@@ -84,7 +86,9 @@
         <div class="row__medium-3">
           <div class="portfolio">
             <div class="portfolio__thumb">
-              <img class="lazyload" data-srcset="./assets/images/splatter.png">
+              <a target="_blank" href="http://dev.alexguevara.us/splatter">
+                <img class="lazyload" data-srcset="./assets/images/splatter.png">
+              </a>
             </div>
           </div>
         </div>
@@ -92,7 +96,9 @@
         <div class="row__medium-3">
           <div class="portfolio">
             <div class="portfolio__thumb">
-              <img class="lazyload" data-srcset="./assets/images/MilennialGoT.png">
+              <a target="_blank" href="http://dev.alexguevara.us/faker">
+                <img class="lazyload" data-srcset="./assets/images/MilennialGoT.png">
+              </a>
             </div>
           </div>
         </div>
@@ -100,7 +106,9 @@
         <div class="row__medium-3">
           <div class="portfolio">
             <div class="portfolio__thumb">
-              <img class="lazyload" data-srcset="./assets/images/nim_thumb.png">
+              <a target="_blank" href="http://noinsurancemedicalsupplies.com">
+                <img class="lazyload" data-srcset="./assets/images/nim_thumb.png">
+              </a>
             </div>
           </div>
         </div>
@@ -116,9 +124,9 @@
     <!-- </div> -->
   </div>
 
-  <div id="photo-portfolio" class="page-section--padding-sides page-section--padding-top page-section--bg-gray lazyload">
+  <div id="photo-portfolio" class="page-section--padding-sides page-section--padding-top page-section--padding-bottom page-section--bg-gray lazyload">
     <div class="row row--gutters-large row--padding-large">
-      <h3>Aside from web development, I have a passion for photography. Take a look at some of my work here, and feel free to view more on my <a href="http://www.alexguevara.us">personal website.</a></h3>
+      <h3>Aside from web development, I have a passion for photography. Take a look at some of my work here, and feel free to view more on my <a target="_blank" href="http://www.alexguevara.us">personal website.</a></h3>
     </div>
     <div class="row row--gutters-large">
       <div class="row__medium-3">
@@ -203,17 +211,8 @@
 
   <div class="modal">
     <div class="modal__inner">
-      <div class="wrapper wrapper--narrow">
-        <h2 class="section-title section-title--blue section-title--less-margin"><span class="icon icon--mail section-title__icon"></span> Get in <strong>Touch</strong></h2>
-        <p class="modal__description">I'm currently open to job offers so if you like what you see, feel free to contact me!</p>
-      </div>
-      <div class="social-icons">
-        <a target="_blank" href="https://www.facebook.com/Alex-Guevara-1485658261742077/" class="social-icons__icon"><span class="icon icon--facebook"></span></a>
-        <a target="_blank" href="https://www.google.com" class="social-icons__icon"><span class="icon icon--twitter"></span></a>
-        <a target="_blank" href="#" class="social-icons__icon"><span class="icon icon--instagram"></span></a>
-        <a target="_blank" href="#" class="social-icons__icon"><span class="icon icon--instagram"></span></a>
-        <a target="_blank" href="https://www.youtube.com/channel/UCeIFmuNAC0qqbGD7kFCg6sA" class="social-icons__icon"><span class="icon icon--youtube"></span></a>
-      </div>
+      
+
     </div>
     <div class="modal__close">X</div>
   </div>
