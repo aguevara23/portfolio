@@ -681,7 +681,7 @@ a {
     width: 20px;
     height: 19px;
     position: absolute;
-    z-index: 10;
+    z-index: 100;
     top: 10px;
     right: 10px;
   }
