@@ -929,7 +929,7 @@ a {
   }
 
 .row__medium-4 {
-
+    width: 30%;
   }
 
 .row__medium-8 {
@@ -1132,7 +1132,7 @@ a {
             transform: scaleX(1.2);
     -webkit-transform-origin: 100% 0;
             transform-origin: 100% 0;
-    color: blue;
+    color: gray;
     cursor: pointer;
   }
 
@@ -1311,6 +1311,32 @@ a {
 .headline--margin-bottom {
     margin-bottom: 2rem;
   }
+
+.resume__header {
+    background-color: lightgray;
+    color: black;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+  }
+
+.resume__header__content {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+    }
+
+.resume__header--float-left {
+      float: left;
+    }
+
+.resume__header--float-right {
+      float: right;
+    }
 
 /*@import "modules/_section-title";
 @import "modules/_feature-item";

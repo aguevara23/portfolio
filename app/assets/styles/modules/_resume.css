@@ -1,0 +1,25 @@
+.resume {
+
+  &__header {
+    background-color: lightgray;
+    color: black;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+    &__content {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    &--float-left {
+      float: left;
+    }
+
+    &--float-right {
+      float: right;
+    }
+
+  }
+}
