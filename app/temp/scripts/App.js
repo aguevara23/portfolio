@@ -10987,15 +10987,36 @@ var _Modal2 = _interopRequireDefault(_Modal);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-// import ContactForm from './modules/ContactForm';
-
 var mobileMenu = new _MobileMenu2.default(); // This is the main javascript file for development. It's written in Babel and compiled with Gulp to be written with vanilla javascript. The compiled App.js file is found in /temp/scripts. Babel uses import, which functions similarly to 'require', though the syntax is much easier to read. The javascript components of the website are separated into individual modules so they are organized by specific functionality. Then they are all imported here.
 
 new _RevealOnScroll2.default((0, _jquery2.default)("#web-portfolio"), "85%");
 new _RevealOnScroll2.default((0, _jquery2.default)("#photo-portfolio"), "60%");
 var stickyHeader = new _StickyHeader2.default();
 var modal = new _Modal2.default();
-// var contactForm = new ContactForm();
+
+(0, _jquery2.default)("#contact-form").submit(function (e) {
+  var name = document.getElementById("inputName"),
+      email = document.getElementById("inputEmail"),
+      num = document.getElementById("inputNum"),
+      message = document.getElementById("inputMessage");
+  console.log(name + " " + email);
+
+  if (!name.value || !email.value || !message.value) {
+    alertify.error("Please fill in the required fields");
+    return false;
+  } else {
+    _jquery2.default.ajax({
+      url: "http://formspree.io/alexguevaramedia@gmail.com",
+      method: "POST",
+      data: (0, _jquery2.default)("#contact-form").serialize(),
+      dataType: "json"
+    });
+
+    e.preventDefault();
+    (0, _jquery2.default)(this).get(0).reset();
+    alertify.success("Message Sent!");
+  }
+});
 
 /***/ }),
 /* 10 */,

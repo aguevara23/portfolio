@@ -10,6 +10,7 @@
   <!-- build:css assets/styles/styles.css -->
   <link rel="stylesheet" href="temp/styles/styles.css">
   <!-- endbuild-->
+  <link rel="stylesheet" href="assets/styles/alertify.css">
 
   <!-- build:js assets/scripts/Vendor.js -->
   <script src="/temp/scripts/Vendor.js"></script>
@@ -170,7 +171,7 @@
           <h3 class="contact-form__subtitle">Fill out the form below and I'll get back to you <em>ASAP!</em></h3>
         </div>
 
-        <form id="#contact-form">
+        <form id="contact-form">
           <div class="contact-form__info">
   					<input id="inputName" type="text" placeholder="your name" name="name">
   					<input id="inputEmail" type="email" placeholder="your email address" name="_replyto">
@@ -234,37 +235,12 @@
   </div>
 
   <!-- build:js assets/scripts/App.js -->
-  <script
-  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"
   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
   crossorigin="anonymous"></script>
   <script src="/assets/scripts/alertify.min.js"></script>
   <script src="/temp/scripts/App.js"></script>
-  <script>
-  $("#contact-form").submit(function(e){
-    var name = document.getElementById("inputName"),
-        email = document.getElementById("inputEmail"),
-        num = document.getElementById("inputNum"),
-        message = document.getElementById("inputMessage")
 
-        if (!name.value || !email.value || !message.value){
-          alertify.error("Please fill in the required fields");
-          return false;
-        } else {
-          $.ajax({
-            url: "http://formspree.io/alexguevaramedia@gmail.com",
-            method: "POST",
-            data: $("#contact-form").serialize(),
-            dataType: "json"
-          })
-
-          e.preventDefault()
-          $(this).get(0).reset()
-          alertify.success("Message Sent!");
-        }
-  })
-
-  </script>
 
   <!-- endbuild -->
 
