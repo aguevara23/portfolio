@@ -30,8 +30,6 @@
 
   }
 
-
-
   &__medium-3 {
     text-align: center;
     width: 100%;
@@ -48,7 +46,14 @@
   }
 
   &__medium-4 {
-    width: 30%;
+    @mixin atSmall {
+      text-align: center;
+    }
+
+    @mixin atMedium{
+        width: 30%;
+    }
+
   }
 
   &__medium-8 {
