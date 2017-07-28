@@ -909,16 +909,9 @@ a {
 
 .row__medium-3 {
     text-align: center;
-    width: 100%;
+    width: 50%;
+    float: left;
     margin-bottom: 20px;
-  }
-
-@media (min-width: 530px) {
-
-.row__medium-3 {
-      float: left;
-      width: 50%
-  }
   }
 
 @media (min-width: 1010px) {
@@ -1047,10 +1040,10 @@ a {
 
     margin-left: auto;
     margin-right: auto;
-    width: 80%;
+    width: 90%;
     overflow: hidden;
     display: inline-block;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
   }
 
 @media (min-width: 1010px) {

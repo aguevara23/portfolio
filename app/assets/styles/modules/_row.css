@@ -32,13 +32,9 @@
 
   &__medium-3 {
     text-align: center;
-    width: 100%;
+    width: 50%;
+    float: left;
     margin-bottom: 20px;
-
-    @mixin atSmall {
-      float: left;
-      width: 50%;
-    }
 
     @mixin atLarge {
       width: 100%;
