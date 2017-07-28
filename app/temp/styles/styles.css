@@ -622,6 +622,7 @@ a {
 
 .site-header--is-expanded {
     background-color: rgba(0, 0, 0, .55);
+    position: fixed;
   }
 
 @media (min-width: 800px) {
@@ -654,6 +655,7 @@ a {
     transition: transform .3s ease-out;
     transition: transform .3s ease-out, -webkit-transform .3s ease-out;
     padding: 0;
+    z-index: 20;
   }
 
 @media (min-width: 800px) {
@@ -680,7 +682,7 @@ a {
 .site-header__menu-icon {
     width: 20px;
     height: 19px;
-    position: absolute;
+    position: fixed;
     z-index: 100;
     top: 10px;
     right: 10px;
@@ -693,7 +695,7 @@ a {
       left: 0;
       width: 20px;
       height: 3px;
-      background-color: #FFF;
+      background-color: lightgray;
       -webkit-transform-origin: 0 0;
               transform-origin: 0 0;
       -webkit-transition: -webkit-transform .3s ease-out;
@@ -708,7 +710,7 @@ a {
       left: 0px;
       width: 20px;
       height: 3px;
-      background-color: #FFF;
+      background-color: lightgray;
       -webkit-transform-origin: 0 50%;
               transform-origin: 0 50%;
       -webkit-transition: -webkit-transform .3s ease-out;
@@ -724,7 +726,7 @@ a {
       left: 0;
       width: 20px;
       height: 3px;
-      background-color: #FFF;
+      background-color: lightgray;
       -webkit-transform-origin: 0 100%;
               transform-origin: 0 100%;
       -webkit-transition: -webkit-transform .3s ease-out;
@@ -762,7 +764,6 @@ a {
             transform: scale(1.2);
     -webkit-transition: all .3s ease-out;
     transition: all .3s ease-out;
-    position: relative;
     z-index: 10;
     padding-top: 90px;
     text-align: center;
@@ -784,6 +785,7 @@ a {
       z-index: 1;
       -webkit-transform: scale(1);
               transform: scale(1);
+      position: relative;
     }
 
 .primary-nav {
@@ -846,7 +848,7 @@ a {
     text-decoration: none;
     font-weight: 300;
     display: block;
-    padding: 5px 8px;
+    padding: 8px 12px;
     font-size: .8rem;
     background-color: rgba(0, 0, 0, .5);
   }
