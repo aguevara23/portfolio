@@ -21,7 +21,6 @@
     width: 90%;
     overflow: hidden;
     display: inline-block;
-    margin-bottom: 0px;
 
     @mixin atLarge {
       width: 95%;
