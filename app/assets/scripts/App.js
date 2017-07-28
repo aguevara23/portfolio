@@ -24,7 +24,7 @@ $("#contact-form").submit(function(e){
         return false;
       } else {
         $.ajax({
-          url: "http://formspree.io/alexguevaramedia@gmail.com",
+          url: "https://formspree.io/alexguevaramedia@gmail.com",
           method: "POST",
           data: $("#contact-form").serialize(),
           dataType: "json"

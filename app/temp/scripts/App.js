@@ -11006,7 +11006,7 @@ var modal = new _Modal2.default();
     return false;
   } else {
     _jquery2.default.ajax({
-      url: "http://formspree.io/alexguevaramedia@gmail.com",
+      url: "https://formspree.io/alexguevaramedia@gmail.com",
       method: "POST",
       data: (0, _jquery2.default)("#contact-form").serialize(),
       dataType: "json"
