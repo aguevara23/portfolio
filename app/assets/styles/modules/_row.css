@@ -38,12 +38,12 @@
 
   &__medium-3 {
     text-align: center;
-    width: 50%;
+    width: 100%;
     float: left;
     margin-bottom: 20px;
 
-    @mixin atLarge {
-      width: 100%;
+    @mixin atMedium {
+      width: 50%;
     }
   }
 

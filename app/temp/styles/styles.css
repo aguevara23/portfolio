@@ -921,15 +921,15 @@ a {
 
 .row__medium-3 {
     text-align: center;
-    width: 50%;
+    width: 100%;
     float: left;
     margin-bottom: 20px;
   }
 
-@media (min-width: 1010px) {
+@media (min-width: 800px) {
 
 .row__medium-3 {
-      width: 100%
+      width: 50%
   }
   }
 
